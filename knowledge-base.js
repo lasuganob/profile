@@ -2,14 +2,14 @@ export const knowledgeBase = [
   {
     keywords: ["about", "who is", "background", "intro", "introduction"],
     answer:
-      "I'm Leo Alexander Suganob, a full-stack software engineer with strong frontend expertise. I build practical web applications, internal tools, and workflow automations using Laravel, React, TypeScript, and modern frontend tooling.",
-    suggestions: ["What are your skills?", "Show me your projects"]
+      "I'm Leo Alexander Suganob, a full-stack software engineer with strong backend expertise. I build practical web applications, internal tools using Laravel, React, TypeScript, and modern frontend tooling.",
+    suggestions: ["What are your skills?", "Show me your projects"],
   },
   {
     keywords: ["summary", "profile", "tell me about yourself"],
     answer:
       "I have 9+ years of experience in web development, working on client projects, internal business systems, and modern frontend applications. My work focuses on maintainable solutions, clean UI, practical workflows, and reliable delivery.",
-    suggestions: ["Experience?", "What is your stack?"]
+    suggestions: ["Experience?", "What is your stack?"],
   },
   {
     keywords: [
@@ -22,13 +22,13 @@ export const knowledgeBase = [
       "backend",
     ],
     answer:
-      "My core stack includes React, TypeScript, JavaScript, Vite, Laravel, PHP, MySQL, and PostgreSQL. I also work with REST APIs, Mantine UI, responsive design, and internal tool development.",
-    suggestions: ["Frontend stack", "Backend stack"]
+      "My core stack includes React, TypeScript, JavaScript, Vite, Laravel, PHP, MySQL, and PostgreSQL. I also work with REST APIs, Mantine UI, Material UI, responsive design, and internal tool development.",
+    suggestions: ["Frontend stack", "Backend stack"],
   },
   {
     keywords: ["react", "vite", "typescript", "frontend stack"],
     answer:
-      "On the frontend, I mainly use React, TypeScript, JavaScript, Vite, Mantine UI, HTML, and CSS. I focus on reusable components, responsive layouts, form-heavy interfaces, and maintainable UI architecture.",
+      "On the frontend, I mainly use React, TypeScript, JavaScript, Vite, Mantine UI, Material UI, HTML, and CSS. I focus on reusable components, responsive layouts, and maintainable UI architecture.",
   },
   {
     keywords: [
@@ -52,13 +52,13 @@ export const knowledgeBase = [
     keywords: ["automation", "workflow", "internal tools", "business tools"],
     answer:
       "I build internal tools and workflow automations that help reduce repetitive work and improve daily operations. My experience includes Slack-based automation tools and business-focused internal systems.",
-    suggestions: ["Tell me about the Slack bot"]
+    suggestions: ["Tell me about the Slack bot"],
   },
   {
     keywords: ["project", "projects", "built", "work", "portfolio"],
     answer:
-      "Some of the projects I've built include a Payslip Sender Automation, a Slack DM Sender Tool, Laravel + React internal tools, and personal PWA projects like a Cashflow App and a Grocery Checklist App.",
-    suggestions: ["What are your PWA projects?", "Automation projects"]
+      "Some of the projects I've built include an Employee Attendance Monitoring System for an ESL company, Talent Assessment Platform and other internal projects. Also I built a Payslip Sender Automation, a Slack DM Sender Tool, Laravel + React internal tools, and personal PWA projects like a Cashflow App and a Grocery Checklist App.",
+    suggestions: ["What are your PWA projects?", "Automation projects"],
   },
   {
     keywords: ["payslip", "slack bot", "automation project"],
@@ -85,7 +85,7 @@ export const knowledgeBase = [
     keywords: ["experience", "years", "career"],
     answer:
       "I have over 9 years of experience in web development, from client-facing projects and marketing websites to internal business systems, automation tools, and modern full-stack applications.",
-    suggestions: ["What projects have you built?"]
+    suggestions: ["What projects have you built?"],
   },
   {
     keywords: ["ui", "ux", "design", "responsive"],
@@ -101,6 +101,6 @@ export const knowledgeBase = [
     keywords: ["contact", "hire", "email", "reach", "linkedin", "github"],
     answer:
       "You can reach out via email at <a href='mailto:lasuganob123@gmail.com' style='color: var(--primary)'>lasuganob123@gmail.com</a>, or connect with me on <a href='https://linkedin.com/in/lasuganob' target='_blank' style='color: var(--primary)'>LinkedIn</a> and <a href='https://github.com/lasuganob' target='_blank' style='color: var(--primary)'>GitHub</a>.",
-    isHtml: true
+    isHtml: true,
   },
 ];
