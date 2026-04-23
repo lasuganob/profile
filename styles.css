@@ -20,11 +20,50 @@ body {
   font-family: 'Inter', system-ui, sans-serif;
   height: 100vh;
   width: 100vw;
-  overflow: hidden; /* Prevent vertical and horizontal scrolling */
-  background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+  overflow: hidden;
+  background: var(--bg-gradient-start);
   color: var(--text-main);
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+/* Dynamic Background Orbs */
+.bg-orbs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.5;
+  animation: float 20s infinite ease-in-out alternate;
+}
+.orb-1 {
+  width: 400px;
+  height: 400px;
+  background: rgba(59, 130, 246, 0.2);
+  top: -100px;
+  left: -100px;
+}
+.orb-2 {
+  width: 500px;
+  height: 500px;
+  background: rgba(16, 185, 129, 0.15);
+  bottom: -200px;
+  right: -100px;
+  animation-delay: -10s;
+}
+@keyframes float {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(50px, 50px) scale(1.1); }
 }
 
 /* Main Content (Introduction & Buttons) */
@@ -42,6 +81,25 @@ body {
 .intro {
   max-width: 800px;
   animation: fadeInDown 0.8s ease-out forwards;
+  position: relative;
+  z-index: 1;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.3);
+  border: 3px solid var(--surface);
+  animation: popIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .intro h1 {
@@ -55,9 +113,29 @@ body {
 .intro p {
   font-size: clamp(1.1rem, 2vw, 1.25rem);
   color: var(--text-muted);
-  margin: 0 auto 2.5rem;
+  margin: 0 auto 2rem;
   line-height: 1.6;
   max-width: 600px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.social-links a {
+  color: var(--text-muted);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links a:hover {
+  color: var(--primary);
+  transform: translateY(-3px);
 }
 
 .buttons {
@@ -71,16 +149,24 @@ body {
 }
 
 .btn {
-  padding: 0.875rem 2rem;
+  padding: 0.875rem 1.75rem;
   font-size: 1rem;
   font-weight: 500;
   color: var(--primary);
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid var(--border);
+  border-radius: 9999px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
   backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn .material-symbols-outlined {
+  font-size: 1.25rem;
 }
 
 .btn:hover {
@@ -88,6 +174,20 @@ body {
   background: var(--surface);
   transform: translateY(-3px);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  color: var(--primary-hover);
+}
+
+/* Footer */
+.main-footer {
+  position: absolute;
+  bottom: 1.5rem;
+  width: 100%;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  opacity: 0.7;
+  pointer-events: none;
+  z-index: 1;
 }
 
 /* Chat Toggle Button */
@@ -393,3 +493,31 @@ body {
   0%, 80%, 100% { opacity: 0.4; }
   40% { opacity: 1; }
 }
+
+/* Suggestions Container */
+.suggestions-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+  animation: fadeInDown 0.3s ease forwards;
+}
+
+.suggestion-btn {
+  background: var(--surface);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.suggestion-btn:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
