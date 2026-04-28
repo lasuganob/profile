@@ -1,35 +1,41 @@
 export const dialogData = {
   about: {
     title: "About Me",
-    body: "I am Leo Alexander Suganob, a full-stack software engineer with strong backend expertise. I build practical web applications, internal tools, and workflow automations using Laravel, React, TypeScript, and modern frontend tooling. I enjoy turning real business needs into maintainable, user-friendly systems, while also using AI tools to speed up development, debugging, and documentation.",
+    body: "I am Leo Alexander Suganob, a PHP/Laravel Engineer based in Cebu, Philippines, with over 9 years of industry experience. I specialize in building reliable backend systems, REST APIs, and internal tools using Laravel and PHP, complemented by practical full-stack capability in React, TypeScript, and Next.js. I am passionate about translating complex business requirements into maintainable software and leveraging AI-assisted tooling to stay at the forefront of modern development patterns.",
   },
   skills: {
     title: "Tech Skills",
-    body: `<ul><li><strong>Frontend:</strong> React, TypeScript, Next.js, JavaScript, Vite, Mantine UI, Material UI, HTML, CSS, Responsive Design, PWA</li><li><strong>Backend:</strong> Laravel, PHP, REST APIs, MySQL, PostgreSQL</li><li><strong>Tools & Workflow:</strong> Git, GitHub, Docker, Postman, Jira, AI-assisted development with ChatGPT, Codex, and Claude</li><li><strong>Concepts:</strong> Internal Tools, Workflow Automation, Form-heavy Interfaces, Maintainable UI, Business Systems</li></ul>`,
+    body: `<ul>
+      <li><strong>Backend:</strong> Laravel, PHP, REST API Design, Redis, MySQL, PostgreSQL, Queue-based Workflows, Caching Strategies</li>
+      <li><strong>Frontend:</strong> React, TypeScript, Next.js, Vite, Mantine UI, Material UI, HTML5, CSS3, Responsive Design, PWA</li>
+      <li><strong>Testing:</strong> PHPUnit, Pest, Feature & Unit Testing</li>
+      <li><strong>DevOps & Tools:</strong> Git, Docker, Postman, VS Code, PHPStorm, Jira, Agile/Scrum</li>
+      <li><strong>AI-Assisted Dev:</strong> Claude, ChatGPT, Codex (Refactoring, Debugging, Rapid Prototyping)</li>
+    </ul>`,
   },
   projects: {
     title: "Featured Projects",
     body: `
     <ul>
       <li>
-        <strong>Laravel + React Internal Tool:</strong>
-        A full-stack business platform built with Laravel and React for internal workflows, with a focus on usability and maintainability.
+        <strong>Teacher Administration System (Glats Inc.):</strong>
+        An internal ESL platform managing teacher records, scheduling, and multi-role permission structures built with Laravel, React, and TypeScript.
       </li>
       <li>
-        <strong>Slack DM Sender Tool:</strong>
-        An internal messaging tool built to streamline staff communication and reduce repetitive manual tasks.
+        <strong>Waste Collection Bidding System:</strong>
+        A multi-party bidding platform in Japan connecting stores, collectors, and disposal sites, featuring bid state machines and role-based access control (Laravel + Inertia.js).
       </li>
       <li>
-        <strong>Payslip Sender Automation:</strong>
-        A Slack-based tool that automates payslip distribution and improves workflow efficiency.
+        <strong>Personality Assessment System:</strong>
+        A psychometric assessment platform for employee evaluation, featuring complex scoring logic and result generation (Laravel + Angular).
       </li>
       <li>
-        <strong>Cashflow App (PWA):</strong>
-        A personal finance app built with React and Vite for tracking income, expenses, and cashflow in a mobile-friendly installable app.
+        <strong>Slack Internal Automation Tools:</strong>
+        Automated payslip distribution and DM sender tools to streamline communication workflows for staff.
       </li>
       <li>
-        <strong>Grocery Checklist App (PWA):</strong>
-        A React and Vite app for grocery planning and checklist-based shopping in a mobile-friendly installable app.
+        <strong>Cashflow & Grocery Checklist (PWA):</strong>
+        Offline-first personal apps built with React, Vite, TypeScript, and Google Apps Script, featuring Dexie.js for local persistence.
       </li>
     </ul>`,
   },
